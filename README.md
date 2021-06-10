@@ -89,4 +89,6 @@ You can find Postman tests here - `Course Tests.postman_test_run.json`
 ---
 
 [API Blueprint](https://app.apiary.io/courses25/)
+### __Deployed to Heroku__
 
+[Courses](https://courseapineobis.herokuapp.com/courses)
