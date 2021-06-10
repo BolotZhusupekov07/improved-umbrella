@@ -1,0 +1,173 @@
+{
+	"id": "1cd45ace-d469-4935-a899-d52e23733408",
+	"name": "Course Tests",
+	"timestamp": "2021-06-03T15:34:04.064Z",
+	"collection_id": "b3b415f5-9e79-4963-9a60-a5285ca48f3e",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 5,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "1bba718c-80f3-406a-b70e-acc2fe01d788",
+			"name": "GET course list success",
+			"url": "http://127.0.0.1:8000/courses/",
+			"time": 28,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"get list of all courses": true
+			},
+			"testPassFailCounts": {
+				"get list of all courses": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				28
+			],
+			"allTests": [
+				{
+					"get list of all courses": true
+				}
+			]
+		},
+		{
+			"id": "363fab52-50b1-49ec-88f3-ee3a4525c9b8",
+			"name": "POST add course success",
+			"url": "http://127.0.0.1:8000/courses/",
+			"time": 86,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"add a new course": true
+			},
+			"testPassFailCounts": {
+				"add a new course": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				86
+			],
+			"allTests": [
+				{
+					"add a new course": true
+				}
+			]
+		},
+		{
+			"id": "7fa148ae-8e5d-4c0e-b3c0-898edd22f2fa",
+			"name": "GET course detail view success",
+			"url": "http://127.0.0.1:8000/courses/38/",
+			"time": 58,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"get detail view of a course using its id": true
+			},
+			"testPassFailCounts": {
+				"get detail view of a course using its id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				58
+			],
+			"allTests": [
+				{
+					"get detail view of a course using its id": true
+				}
+			]
+		},
+		{
+			"id": "b491a7aa-0891-4c24-95ad-5fc3a1b712e6",
+			"name": "GET course list fail",
+			"url": "http://127.0.0.1:8000/",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"get list of courses: should fail": true
+			},
+			"testPassFailCounts": {
+				"get list of courses: should fail": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"get list of courses: should fail": true
+				}
+			]
+		},
+		{
+			"id": "3f701a35-540b-42bb-8edb-464a50f7a535",
+			"name": "DELETE delete course success",
+			"url": "http://127.0.0.1:8000/courses/38/",
+			"time": 18,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"delete a course using its id": true
+			},
+			"testPassFailCounts": {
+				"delete a course using its id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"delete a course using its id": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 196,
+	"collection": {
+		"requests": [
+			{
+				"id": "1bba718c-80f3-406a-b70e-acc2fe01d788",
+				"method": "GET"
+			},
+			{
+				"id": "363fab52-50b1-49ec-88f3-ee3a4525c9b8",
+				"method": "POST"
+			},
+			{
+				"id": "7fa148ae-8e5d-4c0e-b3c0-898edd22f2fa",
+				"method": "GET"
+			},
+			{
+				"id": "b491a7aa-0891-4c24-95ad-5fc3a1b712e6",
+				"method": "GET"
+			},
+			{
+				"id": "3f701a35-540b-42bb-8edb-464a50f7a535",
+				"method": "DELETE"
+			}
+		]
+	}
+}
